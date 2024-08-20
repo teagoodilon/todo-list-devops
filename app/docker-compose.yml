@@ -27,7 +27,7 @@ services:
     environment:
       - PORT=3001
       - DB_USER=root
-      - DB_PASS=Rafa@123
+      - DB_PASS=OtavioTeago
       - DB_HOST=db
       - DB_NAME=todolist
       - DB_PORT=3306
@@ -42,7 +42,7 @@ services:
     ports:
       - 3002:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=Rafa@123
+      - MYSQL_ROOT_PASSWORD=OtavioTeago
     restart: 'always'
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
